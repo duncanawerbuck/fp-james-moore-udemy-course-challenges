@@ -1,5 +1,8 @@
-const h = require('hyperscript'); // or 'virtual-hyperscript'
-const { p } = require('hyperscript-helpers')(h); // ← Notice the (h)
+const hyperscript = require('hyperscript');
+const hyperscriptHelpers = require('hyperscript-helpers')(hyperscript); // ← Notice the (h)
+
+// get the helpers we need
+const { p } = hyperscriptHelpers;
 
 const myParagraph = p('I am a paragraph of text.');
 
